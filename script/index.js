@@ -42,6 +42,15 @@ class Fighter {
   //this logs who attacked who
   attack(target) {
     console.log(this.name + ' attacked ' + target.name);
+    //roll random damage
+
+    let damage = Math.floor(Math.random() * 11)
+    //display damage done in outputBox
+    
+    //KO check to deal damage
+
+    //show remaining hp
+
   }
 
   single(target) {
@@ -92,7 +101,9 @@ function showControls() {
     controlsBox.innerHTML = '<button type="button" name="attack" onclick="Player0.single(Player1)">Single Attack!</button>'
   }
 }
-
+function hideControls() {
+controlsBox.innerHTML = ''
+}
 /*
 
 MHW = 'delicious'
